@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(27 99 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main>h1{
+    position: absolute;
+    top: 1%;
+    color: #fff;
+}
+i{
+    color: #fff;
+    position: absolute;
+    top:2%;
+    right: 2%;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.main .info{
+    padding: .5vw;
+    position: absolute;
+    z-index: 99;
+    top:5%;
+    right: 2%;
+    background-color: #fff;
+    opacity: 0;
+}
+.main .panel {
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top: 8%;
+    background-color: rgb(244, 255, 246);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main .panel .panelTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30%;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(2, 57, 2);
+}
+.elem{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 17px;
+}
+.main .panel .panelTop .elem .box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    color: black;
+    font-weight: bold;
+}
+.main .panel .panelBtm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.4vw;
+    padding: 1vw;
+    width: 100%;
+    height: calc(100% - 100px);
+}
+.main .panel .panelBtm .playAgain{
+    padding: 1vw;
+    background-color: #178017;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.main .panel .panelBtm .playAgain:hover{
+    scale: 1.2;
+}
+.main .panel .gO{
+    color: red;
+}
+.main .panel .panelBtm .bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5vw;
+    height: 3.5vw;
+    background-color: #178017;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.main .panel .panelBtm .bubble:hover{
+    background-color: rgb(5, 72, 5);
+}
