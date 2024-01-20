@@ -4,7 +4,7 @@ function startGame() {
     let hitVal = ""
     function makeBubble() {
         let clutter = "";
-        for (let i = 0; i < 112; i++) {
+        for (let i = 0; i < 150; i++) {
             let randomNum = Math.floor(Math.random() * 10)
             clutter += `<div class="bubble">${randomNum}</div>`
         }
